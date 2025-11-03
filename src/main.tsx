@@ -14,13 +14,13 @@ createRoot(document.getElementById("root")!).render(
       config={{
         embeddedWallets: {
           ethereum: {
-            createOnLogin: "users-without-wallets",
+            createOnLogin: "off",
           },
           solana: {
-            createOnLogin: "users-without-wallets",
+            createOnLogin: "off",
           },
         },
-        appearance: { walletChainType: "ethereum-and-solana" },
+        appearance: { walletChainType: "solana-only" },
         externalWallets: { solana: { connectors: toSolanaWalletConnectors() } },
       }}
     >
